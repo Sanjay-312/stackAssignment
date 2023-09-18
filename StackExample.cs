@@ -32,6 +32,17 @@ namespace StackAssignment
             Console.WriteLine("{0} is in the top of the stack", this.top.data);
             
         }
+
+        public void pop()
+        {
+            if(this.top == null)
+            {
+                Console.WriteLine("stack is empty deletion is not possible");
+                return;
+            }
+            Console.WriteLine("value is popped is {0}",this.top.data);
+            this.top = this.top.Next;
+        }
         public void DisplayData()
         {
             if(top == null)
