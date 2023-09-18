@@ -21,6 +21,17 @@ namespace StackAssignment
             top= node;
             Console.WriteLine("{0} is inseretd into stack",data);
         }
+
+        public void Peek()
+        {
+            if(this.top == null)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            Console.WriteLine("{0} is in the top of the stack", this.top.data);
+            
+        }
         public void DisplayData()
         {
             if(top == null)
